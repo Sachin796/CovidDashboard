@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MainPage from "./pages/MainPage";
+import CumulativeGraph from "./pages/CumulativeGraph";
 import NoMatch from "./pages/NoMatch";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
         <Switch>
           {/* To render a component depending on the URL exact path hit in the browser*/}
           <Route exact path="/" component={MainPage} />
-
+          <Route exact path="/cumulative" component={CumulativeGraph} />
           <Route component={NoMatch} />
         </Switch>
       </div>
