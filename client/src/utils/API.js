@@ -9,6 +9,6 @@ export default {
   getCumulativeCount: function () {
     let cumulativeSvcURL = process.env.REACT_APP_CUMULATIVE_SVC_URL;
 
-    return axios.get(`${cumulativeSvcURL}/api/cumulative/count`);
+    return axios.get(`${cumulativeSvcURL}/api/cumulative`);
   },
 };
